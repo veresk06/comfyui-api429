@@ -4,6 +4,8 @@ One API image-generation node for ComfyUI, with durable result reuse and async-j
 
 ![Actual Nano Banana output from the macOS integration test](example_workflows/generate-image.jpg)
 
+[Comfy Registry](https://registry.comfy.org/ru/publishers/api429/nodes/comfyui-api429) · [Пошаговый гайд на русском](https://api429.com/blog/comfyui-nano-banana-api429-workflow)
+
 ## Install
 
 Clone `https://github.com/veresk06/comfyui-api429.git` or copy this entire folder into `ComfyUI/custom_nodes/comfyui-api429`. In the Python environment used by ComfyUI, install `requirements.txt`, then restart ComfyUI.
