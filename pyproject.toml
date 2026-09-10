@@ -11,3 +11,7 @@ Repository = "https://github.com/veresk06/comfyui-api429"
 Homepage = "https://api429.com"
 Documentation = "https://github.com/veresk06/comfyui-api429#readme"
 "Bug Tracker" = "https://github.com/veresk06/comfyui-api429/issues"
+
+[tool.comfy]
+PublisherId = "api429"
+DisplayName = "API429 Image Generation"
