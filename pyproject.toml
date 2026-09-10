@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-api429"
-version = "0.1.0"
-description = "API429 image generation for ComfyUI: Nano Banana text-to-image, saved-result reuse and async recovery."
+version = "0.2.0"
+description = "Nano Banana, FLUX.2 Pro and GPT Image workflows: generate, edit references, queue prompts and compare current image rates through API429."
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24", "Pillow>=10"]
