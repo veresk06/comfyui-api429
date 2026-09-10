@@ -1,0 +1,106 @@
+{
+  "last_node_id": 3,
+  "last_link_id": 1,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "API429GenerateImage",
+      "pos": [
+        50,
+        100
+      ],
+      "size": [
+        420,
+        300
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "API429GenerateImage"
+      },
+      "widgets_values": [
+        "gemini-3.1-flash-image",
+        "A ceramic mug on a light studio table, no text",
+        "1024x1024",
+        "image-001",
+        false
+      ]
+    },
+    {
+      "id": 2,
+      "type": "SaveImage",
+      "pos": [
+        540,
+        100
+      ],
+      "size": [
+        320,
+        300
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "API429"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "MarkdownNote",
+      "pos": [
+        50,
+        450
+      ],
+      "size": [
+        810,
+        230
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {},
+      "widgets_values": [
+        "# API429 \u00b7 Nano Banana image generation\n\n[Get an API key](https://api429.com/?utm_source=comfyui&utm_medium=workflow&utm_campaign=nano_banana) \u00b7 [Models and prices](https://api429.com/en/models) \u00b7 [Setup and recovery](https://github.com/veresk06/comfyui-api429#install)\n\nSet API429_API_KEY in the server environment. This workflow sends the prompt to API429; generations use your API429 balance. Enable allow_paid_generation for one image. Use a new run_id for each new image; keep the same ID and parameters to recover an existing run. run_id is not a seed. Never share a workflow containing your key.\n\nLive-tested: gemini-3.1-flash-image, 1024x1024, ComfyUI 0.35.0 on macOS."
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

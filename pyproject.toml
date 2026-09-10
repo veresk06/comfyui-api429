@@ -1,0 +1,13 @@
+[project]
+name = "comfyui-api429"
+version = "0.1.0"
+description = "API429 image generation for ComfyUI: Nano Banana text-to-image, saved-result reuse and async recovery."
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "Pillow>=10"]
+
+[project.urls]
+Repository = "https://github.com/veresk06/comfyui-api429"
+Homepage = "https://api429.com"
+Documentation = "https://github.com/veresk06/comfyui-api429#readme"
+"Bug Tracker" = "https://github.com/veresk06/comfyui-api429/issues"
